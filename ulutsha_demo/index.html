@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ulutsha LwaseMancotsheni &mdash; Burial Society Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="demo-bar">&#11045; Demonstration Preview &#8212; Ulutsha LwaseMancotsheni Burial Society &#11045;</div>
+
+  <!-- SCREEN NAVIGATION TABS -->
+  <div class="screen-nav">
+    <div class="screen-tab active" onclick="go('landing')">01 Landing</div>
+    <div class="screen-tab" onclick="go('login')">02 Login</div>
+    <div class="screen-tab" onclick="go('register')">03 Registration</div>
+    <div class="screen-tab" onclick="go('dashboard')">04 Member Dashboard</div>
+    <div class="screen-tab" onclick="go('contributions')">05 Contributions</div>
+    <div class="screen-tab" onclick="go('submitclaim')">06 Submit Claim</div>
+    <div class="screen-tab" onclick="go('myclaims')">07 My Claims</div>
+    <div class="screen-tab" onclick="go('admin')">08 Admin Dashboard</div>
+    <div class="screen-tab" onclick="go('adminmembers')">09 Admin Members</div>
+    <div class="screen-tab" onclick="go('adminclaims')">10 Admin Claims</div>
+  </div>
+
+  <!-- ==================== 01 LANDING PAGE ==================== -->
+  <div id="s-landing" class="screen active">
+    <nav class="landing-nav">
+      <div class="logo-mark">
+        <div class="logo-icon"></div>
+        <div>
+          <div class="logo-text">Ulutsha LwaseMancotsheni</div>
+          <div class="logo-sub">Burial Society</div>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="btn-outline" onclick="go('login')">Login</button>
+        <button class="btn-gold" onclick="go('register')">Apply for Membership</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-ring hero-ring-1"></div>
+      <div class="hero-ring hero-ring-2"></div>
+      <div class="hero-ring hero-ring-3"></div>
+      <div class="hero-content">
+        <div class="hero-tag">Est. 2026 &middot; Young Men of eMancotsheni</div>
+        <h1 class="hero-title">Together We Stand,<br><span>Together We Grieve</span></h1>
+        <p class="hero-desc">A burial society for young men of eMancotsheni. Members pay R100 every month &mdash; when a member loses a family member, we all contribute R5,000 as funeral support. Simple, collective, dignified.</p>
+        <div class="hero-btns">
+          <button class="btn-hp" onclick="go('register')">Apply for Membership</button>
+          <button class="btn-hs" onclick="go('login')">Member Login</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-label">About Us</div>
+      <h2 class="section-title">Rooted in Brotherhood,<br>Built on Trust</h2>
+      <div class="section-div"></div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Ulutsha LwaseMancotsheni Burial Society was founded in 2026 by and for young men of eMancotsheni. Every active member contributes R100 per month. When a fellow member loses a family member, the whole society contributes R5,000 towards funeral expenses.</p>
+          <p>Membership is open to young men of eMancotsheni and surrounding areas. Executive members are elected by active members of the burial society through our WhatsApp group.</p>
+          <p>Our mission is to ease the burden of funeral costs through collective monthly contributions, ensuring no member faces hardship alone in their time of greatest need.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-box"><div class="stat-num">R 100</div><div class="stat-lbl">Monthly Contribution</div></div>
+          <div class="stat-box"><div class="stat-num">R 5,000</div><div class="stat-lbl">Funeral Contribution</div></div>
+          <div class="stat-box"><div class="stat-num">84+</div><div class="stat-lbl">Active Members</div></div>
+          <div class="stat-box"><div class="stat-num">2026</div><div class="stat-lbl">Year Established</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="section-label">Member Benefits</div>
+      <h2 class="section-title">What We Offer</h2>
+      <div class="section-div"></div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="benefit-title">Monthly Contributions</div>
+          <div class="benefit-desc">Every active member contributes R100 per month. Payments are tracked digitally and members can view their full contribution history at any time through the portal.</div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="benefit-title">Funeral Assistance</div>
+          <div class="benefit-desc">When an active member loses a family member, fellow members collectively contribute R5,000 in funeral support. Claims are reviewed and processed promptly by the executive committee.</div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="benefit-title">Community Support</div>
+          <div class="benefit-desc">Membership connects you to a brotherhood of young men. Executives are elected by active members on our WhatsApp group, keeping leadership transparent and community-driven.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Ulutsha LwaseMancotsheni</div>
+          <p class="footer-text">A burial society for young men of eMancotsheni, founded in 2026. Members contribute R100 monthly &mdash; when one of us loses a family member, we stand together with R5,000 in support.</p>
+          <button class="dl-btn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Constitution
+          </button>
+        </div>
+        <div>
+          <div class="footer-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a onclick="go('login')">Member Login</a></li>
+            <li><a onclick="go('register')">Apply for Membership</a></li>
+            <li><a onclick="go('submitclaim')">Submit a Claim</a></li>
+            <li><a>About the Society</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">Contact Us</div>
+          <ul class="footer-links">
+            <li><a>Secretary: 082 XXX XXXX</a></li>
+            <li><a>Treasurer: 073 XXX XXXX</a></li>
+            <li><a>secretary@ulutsha.org</a></li>
+            <li><a>eMancotsheni, Eastern Cape</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Ulutsha LwaseMancotsheni Burial Society. All rights reserved.</span>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+          <span>Governed by the Society Constitution</span>
+          <span style="color:#C9A84C;font-size:11.5px;letter-spacing:.04em">Created by Hlomla Ndzendze</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+ 
+  <div id="s-login" class="screen">
+    <div class="auth-screen">
+      <div class="auth-card">
+        <div class="auth-logo">
+          <div class="auth-logo-icon"></div>
+          <h1 class="auth-title">Welcome Back</h1>
+          <p class="auth-sub">Sign in to your Ulutsha member account</p>
+        </div>
+        <div class="form-field">
+          <label class="form-label">Phone Number or Email</label>
+          <input class="form-input" type="text" placeholder="e.g. 082 000 0000">
+        </div>
+        <div class="form-field">
+          <label class="form-label">Password</label>
+          <input class="form-input" type="password" placeholder="Enter your password">
+          <a class="forgot-link">Forgot password?</a>
+        </div>
+        <button class="btn-gold btn-full" onclick="go('dashboard')">Login to My Account</button>
+        <p class="auth-switch">Not a member yet? <span onclick="go('register')">Apply for Membership</span></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="s-register" class="screen">
+    <div class="auth-screen" style="align-items:flex-start;padding-top:36px">
+      <div class="auth-card wide">
+        <div class="auth-logo">
+          <div class="auth-logo-icon"></div>
+          <h1 class="auth-title">Membership Application</h1>
+          <p class="auth-sub">Complete the form below to apply for membership</p>
+        </div>
+        <div class="form-grid-2">
+          <div class="form-field"><label class="form-label">First Name</label><input class="form-input" type="text" placeholder="Sipho"></div>
+          <div class="form-field"><label class="form-label">Surname</label><input class="form-input" type="text" placeholder="Ndlovu"></div>
+        </div>
+        <div class="form-field"><label class="form-label">ID Number</label><input class="form-input" type="text" placeholder="8001015009087"></div>
+        <div class="form-grid-2">
+          <div class="form-field"><label class="form-label">Phone Number</label><input class="form-input" type="tel" placeholder="082 000 0000"></div>
+          <div class="form-field"><label class="form-label">Date of Birth</label><input class="form-input" type="date"></div>
+        </div>
+        <div class="form-field"><label class="form-label">Residential Address</label><input class="form-input" type="text" placeholder="eMancotsheni"></div>
+        <div class="form-field">
+          <label class="form-label">Upload ID Document</label>
+          <div class="file-upload">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" style="margin-bottom:7px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            <div class="file-upload-text">Click to upload or drag &amp; drop</div>
+            <div class="file-upload-hint">PDF, JPG or PNG &mdash; max 5MB</div>
+          </div>
+        </div>
+        <button class="btn-gold btn-full">Submit Application</button>
+        <p class="auth-switch">Already a member? <span onclick="go('login')">Login here</span></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="s-dashboard" class="screen">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo"><div class="sidebar-name">Sipho Ndlovu</div><div class="sidebar-role">Member</div></div>
+        <div class="nav-sec">Overview</div>
+        <div class="nav-item active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</div>
+        <div class="nav-sec">My Account</div>
+        <div class="nav-item" onclick="go('contributions')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Contributions</div>
+        <div class="nav-item" onclick="go('submitclaim')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>Submit Claim</div>
+        <div class="nav-item" onclick="go('myclaims')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>My Claims</div>
+        <div class="nav-item"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>My Profile</div>
+      </aside>
+      <main class="main-content">
+        <div class="page-header"><h1 class="page-title">Good morning, Sipho</h1><p class="page-sub">Here is your membership overview for June 2026</p></div>
+        <div class="stats-row">
+          <div class="stat-card"><div class="sc-label">Membership Status</div><div style="margin-top:9px"><span class="badge-active">Active</span></div><div class="sc-sub">Since January 2026</div></div>
+          <div class="stat-card green"><div class="sc-label">Contribution Status</div><div style="margin-top:9px"><span class="badge-active">Up to Date</span></div><div class="sc-sub">Last: May 2026 &mdash; R100</div></div>
+          <div class="stat-card"><div class="sc-label">Benefit Eligibility</div><div style="margin-top:9px"><span class="badge-active">Eligible</span></div><div class="sc-sub">6 months contributed</div></div>
+          <div class="stat-card amber"><div class="sc-label">Outstanding</div><div class="sc-value" style="color:#F0A830">R 0</div><div class="sc-sub">No arrears</div></div>
+        </div>
+        <div class="quick-actions">
+          <div class="action-card" onclick="go('contributions')"><div class="action-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="action-title">Pay Contribution</div><div class="action-desc">Upload proof of monthly payment</div></div>
+          <div class="action-card" onclick="go('submitclaim')"><div class="action-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg></div><div class="action-title">Submit Claim</div><div class="action-desc">File a funeral benefit claim</div></div>
+          <div class="action-card"><div class="action-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="action-title">View Profile</div><div class="action-desc">Update your personal details</div></div>
+        </div>
+        <div class="table-wrap">
+          <div class="table-header"><span class="table-title">Recent Contributions</span><button class="btn-outline" style="font-size:12px;padding:7px 15px" onclick="go('contributions')">View All</button></div>
+          <table class="data-table"><thead><tr><th>Month</th><th>Amount</th><th>Date Paid</th><th>Status</th></tr></thead><tbody>
+            <tr><td>May 2026</td><td>R 100.00</td><td>3 May 2026</td><td><span class="badge-active">Verified</span></td></tr>
+            <tr><td>April 2026</td><td>R 100.00</td><td>1 Apr 2026</td><td><span class="badge-active">Verified</span></td></tr>
+            <tr><td>March 2026</td><td>R 100.00</td><td>4 Mar 2026</td><td><span class="badge-active">Verified</span></td></tr>
+          </tbody></table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ==================== 05 CONTRIBUTIONS ==================== -->
+  <div id="s-contributions" class="screen">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo"><div class="sidebar-name">Sipho Ndlovu</div><div class="sidebar-role">Member</div></div>
+        <div class="nav-sec">Overview</div>
+        <div class="nav-item" onclick="go('dashboard')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</div>
+        <div class="nav-sec">My Account</div>
+        <div class="nav-item active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Contributions</div>
+        <div class="nav-item" onclick="go('submitclaim')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Submit Claim</div>
+        <div class="nav-item" onclick="go('myclaims')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>My Claims</div>
+      </aside>
+      <main class="main-content">
+        <div class="page-header"><h1 class="page-title">Contributions</h1><p class="page-sub">Track and submit your monthly payments</p></div>
+        <div class="stats-row" style="grid-template-columns:repeat(3,1fr)">
+          <div class="stat-card"><div class="sc-label">Total Paid</div><div class="sc-value">R 600</div><div class="sc-sub">6 months</div></div>
+          <div class="stat-card green"><div class="sc-label">Current Status</div><div style="margin-top:9px"><span class="badge-active">Up to Date</span></div><div class="sc-sub">June 2026 due</div></div>
+          <div class="stat-card amber"><div class="sc-label">Outstanding</div><div class="sc-value" style="color:#F0A830">R 0</div><div class="sc-sub">No arrears</div></div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 320px;gap:22px">
+          <div class="table-wrap">
+            <div class="table-header"><span class="table-title">Payment History</span></div>
+            <table class="data-table"><thead><tr><th>Month</th><th>Amount</th><th>Submitted</th><th>Status</th></tr></thead><tbody>
+              <tr><td>May 2026</td><td>R 100.00</td><td>3 May 2026</td><td><span class="badge-active">Verified</span></td></tr>
+              <tr><td>April 2026</td><td>R 100.00</td><td>1 Apr 2026</td><td><span class="badge-active">Verified</span></td></tr>
+              <tr><td>March 2026</td><td>R 100.00</td><td>4 Mar 2026</td><td><span class="badge-active">Verified</span></td></tr>
+              <tr><td>February 2026</td><td>R 100.00</td><td>2 Feb 2026</td><td><span class="badge-active">Verified</span></td></tr>
+              <tr><td>January 2026</td><td>R 100.00</td><td>5 Jan 2026</td><td><span class="badge-active">Verified</span></td></tr>
+            </tbody></table>
+          </div>
+          <div class="form-card" style="max-width:100%">
+            <div class="fs-title">Submit June 2026</div>
+            <div class="form-field"><label class="form-label">Payment Month</label><select class="form-select"><option>June 2026</option></select></div>
+            <div class="form-field"><label class="form-label">Amount</label><input class="form-input" type="text" value="R 100.00"></div>
+            <div class="form-field">
+              <label class="form-label">Proof of Payment</label>
+              <div class="file-upload"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" style="margin-bottom:5px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg><div class="file-upload-text" style="font-size:12px">Upload receipt or screenshot</div></div>
+              <p class="form-hint">Manual verification by Treasurer.</p>
+            </div>
+            <button class="btn-gold btn-full">Submit Payment</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ==================== 06 SUBMIT CLAIM ==================== -->
+  <div id="s-submitclaim" class="screen">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo"><div class="sidebar-name">Sipho Ndlovu</div><div class="sidebar-role">Member</div></div>
+        <div class="nav-sec">Overview</div>
+        <div class="nav-item" onclick="go('dashboard')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</div>
+        <div class="nav-sec">My Account</div>
+        <div class="nav-item" onclick="go('contributions')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Contributions</div>
+        <div class="nav-item active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>Submit Claim</div>
+        <div class="nav-item" onclick="go('myclaims')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>My Claims</div>
+      </aside>
+      <main class="main-content">
+        <div class="page-header"><h1 class="page-title">Submit a Claim</h1><p class="page-sub">File a funeral benefit claim for review by the executive committee</p></div>
+        <div class="form-card">
+          <div class="fs-title">Claimant Information</div>
+          <div class="form-field"><label class="form-label">Member Name</label><input class="form-input" value="Sipho Ndlovu" readonly></div>
+          <div class="form-grid-2">
+            <div class="form-field"><label class="form-label">Deceased Full Name</label><input class="form-input" placeholder="Full name of deceased"></div>
+            <div class="form-field"><label class="form-label">Relationship</label><select class="form-select"><option value="">Select&hellip;</option><option>Parent</option><option>Spouse</option><option>Child</option><option>Sibling</option><option>Other</option></select></div>
+          </div>
+          <div class="form-field"><label class="form-label">Date of Death</label><input class="form-input" type="date"></div>
+          <div class="fs-title" style="margin-top:24px">Bank Details for Payout</div>
+          <div class="form-grid-2">
+            <div class="form-field"><label class="form-label">Bank Name</label><input class="form-input" placeholder="e.g. FNB, ABSA"></div>
+            <div class="form-field"><label class="form-label">Account Number</label><input class="form-input" placeholder="Account number"></div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-field"><label class="form-label">Branch Code</label><input class="form-input" placeholder="e.g. 250655"></div>
+            <div class="form-field"><label class="form-label">Account Type</label><select class="form-select"><option>Cheque / Current</option><option>Savings</option></select></div>
+          </div>
+          <div class="fs-title" style="margin-top:24px">Supporting Documents</div>
+          <div class="form-field"><label class="form-label">Death Certificate</label><div class="file-upload"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" style="margin-bottom:5px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg><div class="file-upload-text" style="font-size:12px">Upload death certificate</div></div></div>
+          <div class="form-field"><label class="form-label">Additional Documents</label><div class="file-upload"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" style="margin-bottom:5px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg><div class="file-upload-text" style="font-size:12px">ID copy, funeral notice, etc.</div></div></div>
+          <button class="btn-gold btn-full" onclick="go('myclaims')">Submit Claim for Review</button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ==================== 07 MY CLAIMS ==================== -->
+  <div id="s-myclaims" class="screen">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo"><div class="sidebar-name">Sipho Ndlovu</div><div class="sidebar-role">Member</div></div>
+        <div class="nav-sec">Overview</div>
+        <div class="nav-item" onclick="go('dashboard')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</div>
+        <div class="nav-sec">My Account</div>
+        <div class="nav-item" onclick="go('contributions')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Contributions</div>
+        <div class="nav-item" onclick="go('submitclaim')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Submit Claim</div>
+        <div class="nav-item active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>My Claims</div>
+      </aside>
+      <main class="main-content">
+        <div class="page-header"><h1 class="page-title">My Claims</h1><p class="page-sub">Track the status of your submitted funeral claims</p></div>
+        <div class="table-wrap">
+          <div class="table-header"><span class="table-title">Claims History</span><button class="btn-gold" style="font-size:12px;padding:8px 17px" onclick="go('submitclaim')">+ New Claim</button></div>
+          <table class="data-table"><thead><tr><th>Claim Ref</th><th>Deceased</th><th>Relationship</th><th>Date Submitted</th><th>Amount</th><th>Status</th></tr></thead><tbody>
+            <tr><td style="color:#C9A84C;font-weight:600">CLM-2026-008</td><td>Zanele Dlamini</td><td>Mother</td><td>28 May 2026</td><td>R 5,000</td><td><span class="badge-pending">Pending</span></td></tr>
+            <tr><td style="color:#C9A84C;font-weight:600">CLM-2026-004</td><td>Nomvula Ndlovu</td><td>Mother</td><td>12 Mar 2026</td><td>R 5,000</td><td><span class="badge-active">Paid</span></td></tr>
+          </tbody></table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ==================== 08 ADMIN DASHBOARD ==================== -->
+  <div id="s-admin" class="screen">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo"><div class="sidebar-name">Nkosi Mthembu</div><div class="sidebar-role" style="color:#CF6060">Executive &mdash; Admin</div></div>
+        <div class="nav-sec">Overview</div>
+        <div class="nav-item active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Admin Overview</div>
+        <div class="nav-sec">Management</div>
+        <div class="nav-item" onclick="go('adminmembers')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Members</div>
+        <div class="nav-item"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Payments</div>
+        <div class="nav-item" onclick="go('adminclaims')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Claims</div>
+      </aside>
+      <main class="main-content">
+        <div class="page-header"><h1 class="page-title">Admin Dashboard</h1><p class="page-sub">Executive access &mdash; Society overview for June 2026</p></div>
+        <div class="stats-row">
+          <div class="stat-card"><div class="sc-label">Total Members</div><div class="sc-value">84</div><div class="sc-sub">+3 this month</div></div>
+          <div class="stat-card amber"><div class="sc-label">Pending Claims</div><div class="sc-value" style="color:#F0A830">4</div><div class="sc-sub">Awaiting review</div></div>
+          <div class="stat-card green"><div class="sc-label">Paid Claims (YTD)</div><div class="sc-value" style="color:#4CAF82">18</div><div class="sc-sub">R 90,000 disbursed</div></div>
+          <div class="stat-card red"><div class="sc-label">Outstanding Contributions</div><div class="sc-value" style="color:#CF6060">6</div><div class="sc-sub">Members in arrears</div></div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
+          <div class="table-wrap">
+            <div class="table-header"><span class="table-title">Recent Applications</span><button class="btn-outline" style="font-size:12px;padding:7px 14px" onclick="go('adminmembers')">View All</button></div>
+            <table class="data-table"><thead><tr><th>Name</th><th>Date Applied</th><th>Status</th></tr></thead><tbody>
+              <tr><td>Buyani Zuma</td><td>10 Jun 2026</td><td><span class="badge-pending">Pending</span></td></tr>
+              <tr><td>Nokwanda Cele</td><td>8 Jun 2026</td><td><span class="badge-pending">Pending</span></td></tr>
+              <tr><td>Musa Dladla</td><td>5 Jun 2026</td><td><span class="badge-active">Approved</span></td></tr>
+            </tbody></table>
+          </div>
+          <div class="table-wrap">
+            <div class="table-header"><span class="table-title">Pending Claims</span><button class="btn-outline" style="font-size:12px;padding:7px 14px" onclick="go('adminclaims')">View All</button></div>
+            <table class="data-table"><thead><tr><th>Ref</th><th>Member</th><th>Amount</th><th>Status</th></tr></thead><tbody>
+              <tr><td style="color:#C9A84C">CLM-008</td><td>S. Ndlovu</td><td>R 5,000</td><td><span class="badge-pending">Pending</span></td></tr>
+              <tr><td style="color:#C9A84C">CLM-007</td><td>T. Nkosi</td><td>R 5,000</td><td><span class="badge-pending">Pending</span></td></tr>
+            </tbody></table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ==================== 09 ADMIN MEMBERS ==================== -->
+  <div id="s-adminmembers" class="screen">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo"><div class="sidebar-name">Nkosi Mthembu</div><div class="sidebar-role" style="color:#CF6060">Executive &mdash; Admin</div></div>
+        <div class="nav-sec">Overview</div>
+        <div class="nav-item" onclick="go('admin')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Admin Overview</div>
+        <div class="nav-sec">Management</div>
+        <div class="nav-item active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Members</div>
+        <div class="nav-item"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Payments</div>
+        <div class="nav-item" onclick="go('adminclaims')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Claims</div>
+      </aside>
+      <main class="main-content">
+        <div class="page-header"><h1 class="page-title">Member Management</h1><p class="page-sub">Review applications and manage member records</p></div>
+        <div class="table-wrap">
+          <div class="table-header">
+            <span class="table-title">All Members (84)</span>
+            <div style="display:flex;gap:10px">
+              <input class="form-input" style="width:200px;padding:8px 13px;font-size:12.5px" placeholder="Search members...">
+              <select class="form-select" style="width:130px;padding:8px 12px;font-size:12.5px"><option>All Statuses</option><option>Active</option><option>Pending</option><option>Suspended</option></select>
+            </div>
+          </div>
+          <table class="data-table"><thead><tr><th>Member</th><th>ID Number</th><th>Phone</th><th>Joined</th><th>Contributions</th><th>Status</th><th>Action</th></tr></thead><tbody>
+            <tr><td><strong>Sipho Ndlovu</strong></td><td style="color:#7A8BA8">800101&hellip;9087</td><td>082 XXX XXXX</td><td>Jan 2026</td><td><span class="badge-active">Up to Date</span></td><td><span class="badge-active">Active</span></td><td><button class="btn-outline" style="font-size:11px;padding:5px 11px">View</button></td></tr>
+            <tr><td><strong>Nokwanda Cele</strong></td><td style="color:#7A8BA8">920315&hellip;2104</td><td>073 XXX XXXX</td><td>Jun 2026</td><td style="color:#7A8BA8">&mdash;</td><td><span class="badge-pending">Pending</span></td><td><div style="display:flex;gap:5px"><button class="btn-gold" style="font-size:11px;padding:5px 11px">Approve</button><button class="btn-outline" style="font-size:11px;padding:5px 11px;color:#CF6060;border-color:#CF6060">Reject</button></div></td></tr>
+            <tr><td><strong>Buyani Zuma</strong></td><td style="color:#7A8BA8">880720&hellip;4511</td><td>081 XXX XXXX</td><td>Jun 2026</td><td style="color:#7A8BA8">&mdash;</td><td><span class="badge-pending">Pending</span></td><td><div style="display:flex;gap:5px"><button class="btn-gold" style="font-size:11px;padding:5px 11px">Approve</button><button class="btn-outline" style="font-size:11px;padding:5px 11px;color:#CF6060;border-color:#CF6060">Reject</button></div></td></tr>
+            <tr><td><strong>Thandi Mokoena</strong></td><td style="color:#7A8BA8">750606&hellip;6612</td><td>076 XXX XXXX</td><td>Feb 2026</td><td><span class="badge-rejected">2 Months Arrears</span></td><td><span class="badge-active">Active</span></td><td><button class="btn-outline" style="font-size:11px;padding:5px 11px">View</button></td></tr>
+          </tbody></table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ==================== 10 ADMIN CLAIMS ==================== -->
+  <div id="s-adminclaims" class="screen">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo"><div class="sidebar-name">Nkosi Mthembu</div><div class="sidebar-role" style="color:#CF6060">Executive &mdash; Admin</div></div>
+        <div class="nav-sec">Overview</div>
+        <div class="nav-item" onclick="go('admin')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Admin Overview</div>
+        <div class="nav-sec">Management</div>
+        <div class="nav-item" onclick="go('adminmembers')"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Members</div>
+        <div class="nav-item"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Payments</div>
+        <div class="nav-item active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Claims</div>
+      </aside>
+      <main class="main-content">
+        <div class="page-header"><h1 class="page-title">Claims Management</h1><p class="page-sub">Review, approve, and process funeral benefit claims</p></div>
+        <div class="stats-row">
+          <div class="stat-card amber"><div class="sc-label">Pending</div><div class="sc-value" style="color:#F0A830">4</div></div>
+          <div class="stat-card"><div class="sc-label">Under Review</div><div class="sc-value">2</div></div>
+          <div class="stat-card green"><div class="sc-label">Approved (YTD)</div><div class="sc-value" style="color:#4CAF82">18</div></div>
+          <div class="stat-card red"><div class="sc-label">Rejected</div><div class="sc-value" style="color:#CF6060">3</div></div>
+        </div>
+        <div class="table-wrap">
+          <div class="table-header">
+            <span class="table-title">All Claims</span>
+            <select class="form-select" style="width:145px;padding:8px 12px;font-size:12.5px"><option>All Statuses</option><option>Pending</option><option>Approved</option><option>Paid</option><option>Rejected</option></select>
+          </div>
+          <table class="data-table"><thead><tr><th>Ref</th><th>Member</th><th>Deceased</th><th>Submitted</th><th>Amount</th><th>Status</th><th>Action</th></tr></thead><tbody>
+            <tr><td style="color:#C9A84C;font-weight:600">CLM-008</td><td>Sipho Ndlovu</td><td>Zanele Dlamini (Mother)</td><td>28 May 2026</td><td>R 5,000</td><td><span class="badge-pending">Pending</span></td><td><div style="display:flex;gap:5px"><button class="btn-gold" style="font-size:11px;padding:5px 11px">Approve</button><button class="btn-outline" style="font-size:11px;padding:5px 11px;color:#CF6060;border-color:#CF6060">Reject</button></div></td></tr>
+            <tr><td style="color:#C9A84C;font-weight:600">CLM-007</td><td>Thobile Nkosi</td><td>Bongani Nkosi (Father)</td><td>25 May 2026</td><td>R 5,000</td><td><span class="badge-pending">Pending</span></td><td><div style="display:flex;gap:5px"><button class="btn-gold" style="font-size:11px;padding:5px 11px">Approve</button><button class="btn-outline" style="font-size:11px;padding:5px 11px;color:#CF6060;border-color:#CF6060">Reject</button></div></td></tr>
+            <tr><td style="color:#C9A84C;font-weight:600">CLM-005</td><td>Lindiwe Khumalo</td><td>Ntombizodwa Khumalo (Mother)</td><td>10 May 2026</td><td>R 5,000</td><td><span class="badge-paid">Approved</span></td><td><button class="btn-gold" style="font-size:11px;padding:5px 11px">Mark Paid</button></td></tr>
+            <tr><td style="color:#C9A84C;font-weight:600">CLM-004</td><td>Sipho Ndlovu</td><td>Nomvula Ndlovu (Mother)</td><td>12 Mar 2026</td><td>R 5,000</td><td><span class="badge-active">Paid</span></td><td><button class="btn-outline" style="font-size:11px;padding:5px 11px">View</button></td></tr>
+            <tr><td style="color:#C9A84C;font-weight:600">CLM-003</td><td>Patrick Dube</td><td>Siphiwe Dube (Sibling)</td><td>2 Apr 2026</td><td>R 5,000</td><td><span class="badge-rejected">Rejected</span></td><td><button class="btn-outline" style="font-size:11px;padding:5px 11px">View</button></td></tr>
+          </tbody></table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+</div><!-- /.wrap -->
+
+<script src="script.js"></script>
+</body>
+</html>
